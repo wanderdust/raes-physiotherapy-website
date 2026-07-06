@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAQ – Physiotherapy Questions Answered | Rae's Anatomy Fife</title>
+  <meta name="description" content="Frequently asked questions about physiotherapy in Fife. Get answers about appointments, treatments, pricing and insurance coverage at Rae's Anatomy.">
+  <title>FAQ - Physiotherapy Questions Answered | Rae's Anatomy Fife</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -40,7 +41,8 @@
           <ul>
             <li class="mobile-book-cta"><a href="appointments.html">Book Appointment</a></li>
             <li><a href="index.html">Home</a></li>
-            <li class="has-dropdown"><a href="about.html">About</a>
+            <li class="has-dropdown">
+              <a href="about.html">About</a>
               <ul class="dropdown-menu">
                 <li><a href="about.html">Our Story</a></li>
                 <li><a href="marcus-rae.html">Marcus Rae</a></li>
@@ -50,13 +52,15 @@
                 <li><a href="lisa.html">Lisa</a></li>
               </ul>
             </li>
-            <li class="has-dropdown"><a href="locations.html">Locations</a>
+            <li class="has-dropdown">
+              <a href="locations.html">Locations</a>
               <ul class="dropdown-menu">
                 <li><a href="burntisland.html">Burntisland</a></li>
                 <li><a href="glenrothes.html">Glenrothes</a></li>
               </ul>
             </li>
-            <li class="has-dropdown"><a href="services.html">Services</a>
+            <li class="has-dropdown">
+              <a href="services.html">Services</a>
               <ul class="dropdown-menu">
                 <li><a href="back-neck-physiotherapy.html">Back &amp; Neck Physio</a></li>
                 <li><a href="acupuncture.html">Acupuncture</a></li>
@@ -87,92 +91,144 @@
 
   <main class="page-content">
 
+    <!-- Hero -->
+    <section class="page-hero">
+      <div class="page-hero-bg" style="background-image: url('assets/images/faqhero.jpg');"></div>
+      <div class="container">
+        <div class="page-hero-body">
+          <h1>Frequently Asked Questions</h1>
+          <p class="page-hero-sub">Get answers to common questions about physiotherapy, our services, and what to expect</p>
+          <div class="page-hero-badges">
+            <span class="page-hero-badge">Expert Answers</span>
+            <span class="page-hero-badge">Clear Information</span>
+            <span class="page-hero-badge">Quick Support</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section">
       <div class="container">
-        <div class="page-hero">
-          <h1>Frequently Asked Questions</h1>
-          <p>Get answers to common questions about physiotherapy, our services, and what to expect.</p>
+
+        <!-- Category Filter Tabs -->
+        <div class="faq-tabs" id="faq-tabs">
+          <button class="faq-tab faq-tab--active" data-category="all">
+            <span class="faq-tab-icon">📚</span>
+            <span>All FAQs</span>
+          </button>
+          <button class="faq-tab" data-category="general">
+            <span class="faq-tab-icon">📋</span>
+            <span>General Info</span>
+          </button>
+          <button class="faq-tab" data-category="appointments">
+            <span class="faq-tab-icon">📅</span>
+            <span>Appointments</span>
+          </button>
+          <button class="faq-tab" data-category="insurance">
+            <span class="faq-tab-icon">💰</span>
+            <span>Insurance</span>
+          </button>
+          <button class="faq-tab" data-category="treatments">
+            <span class="faq-tab-icon">🏥</span>
+            <span>Treatments</span>
+          </button>
         </div>
 
-        <div class="faq-list mt-xl">
+        <!-- FAQ Items -->
+        <div class="faq-list mt-xl" id="faq-items">
 
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">What is physiotherapy?</button>
-            <div class="faq-answer">
+          <div class="faq-item" data-category="general">
+            <div class="faq-item-icon">❓</div>
+            <div>
+              <h2>What is physiotherapy?</h2>
               <p>Physiotherapy is a healthcare profession that helps people affected by injury, illness or disability through movement, exercise, manual therapy, education and advice. Our physiotherapists use evidence-based techniques to help restore function, reduce pain, and prevent future injury.</p>
             </div>
           </div>
 
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">Do I need a GP referral to see a physiotherapist?</button>
-            <div class="faq-answer">
+          <div class="faq-item" data-category="general">
+            <div class="faq-item-icon">🩺</div>
+            <div>
+              <h2>Do I need a GP referral to see a physiotherapist?</h2>
               <p>No, you don't need a GP referral to book an appointment at Rae's Anatomy Physiotherapy. You can self-refer directly by calling us on 07588 468380 or booking online. However, if you're using private health insurance, some providers may require a GP referral.</p>
             </div>
           </div>
 
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">How long does a physiotherapy appointment last?</button>
-            <div class="faq-answer">
+          <div class="faq-item" data-category="appointments">
+            <div class="faq-item-icon">⏱️</div>
+            <div>
+              <h2>How long does a physiotherapy appointment last?</h2>
               <p>Initial assessments typically last 60 minutes, return visits are 45 minutes, and follow-up sessions are 30 minutes. This gives us enough time to assess your condition thoroughly, provide treatment, and give you exercises or advice to help between sessions.</p>
             </div>
           </div>
 
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">How many physiotherapy sessions will I need?</button>
-            <div class="faq-answer">
+          <div class="faq-item" data-category="treatments">
+            <div class="faq-item-icon">📊</div>
+            <div>
+              <h2>How many physiotherapy sessions will I need?</h2>
               <p>The number of sessions varies depending on your condition, injury severity, and treatment goals. Many patients see improvement within 3–6 sessions, but some conditions may require more. Your physiotherapist will discuss a treatment plan with you during your initial assessment.</p>
             </div>
           </div>
 
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">Do you accept health insurance?</button>
-            <div class="faq-answer">
+          <div class="faq-item" data-category="insurance">
+            <div class="faq-item-icon">🛡️</div>
+            <div>
+              <h2>Do you accept health insurance?</h2>
               <p>Yes, we work with most major private health insurance providers including Vitality, Aviva, AXA, Cigna, and Healix. We can provide direct billing for approved treatments. Please check with your provider for coverage details and any authorisation requirements.</p>
             </div>
           </div>
 
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">What should I wear to my physiotherapy appointment?</button>
-            <div class="faq-answer">
+          <div class="faq-item" data-category="appointments">
+            <div class="faq-item-icon">👕</div>
+            <div>
+              <h2>What should I wear to my physiotherapy appointment?</h2>
               <p>Wear comfortable, loose-fitting clothing that allows easy access to the area being treated. For lower body treatments, shorts are ideal. For upper body issues, a t-shirt or vest top works well. You may need to remove some clothing for assessment and treatment.</p>
             </div>
           </div>
 
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">Can physiotherapy help with chronic pain?</button>
-            <div class="faq-answer">
+          <div class="faq-item" data-category="treatments">
+            <div class="faq-item-icon">💪</div>
+            <div>
+              <h2>Can physiotherapy help with chronic pain?</h2>
               <p>Yes, physiotherapy is highly effective for managing chronic pain conditions. We use a combination of manual therapy, exercise prescription, pain education, and self-management strategies to help reduce pain and improve function. Many patients experience significant improvements in their quality of life.</p>
             </div>
           </div>
 
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">What is your cancellation policy?</button>
-            <div class="faq-answer">
+          <div class="faq-item" data-category="appointments">
+            <div class="faq-item-icon">📅</div>
+            <div>
+              <h2>What's your cancellation policy?</h2>
               <p>We require at least 24 hours notice for cancellations or rescheduling. Cancellations with less than 24 hours notice or missed appointments may be subject to a cancellation fee. Please see our <a href="cancellation-policy.html">full booking and cancellation policy</a> for details.</p>
             </div>
           </div>
 
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">Do you offer home visits?</button>
-            <div class="faq-answer">
+          <div class="faq-item" data-category="treatments">
+            <div class="faq-item-icon">🏠</div>
+            <div>
+              <h2>Do you offer home visits?</h2>
               <p>Yes, we offer home and community physiotherapy for patients who are unable to attend our clinics. This service is ideal for those who are housebound, have mobility issues, or have just been discharged from hospital. Contact us to discuss your needs.</p>
             </div>
           </div>
 
-          <div class="faq-item">
-            <button class="faq-question" aria-expanded="false">What conditions do you treat?</button>
-            <div class="faq-answer">
-              <p>We treat a wide range of conditions including sports injuries, back and neck pain, post-operative rehabilitation, chronic pain, arthritis, vestibular disorders, workplace injuries, and more. Our physiotherapists have extensive experience across many areas. If you're unsure whether we can help, please call us for a free 10-minute consultation.</p>
+          <div class="faq-item" data-category="treatments">
+            <div class="faq-item-icon">🩺</div>
+            <div>
+              <h2>What conditions do you treat?</h2>
+              <p>We treat a wide range of conditions including sports injuries, back and neck pain, post-operative rehabilitation, chronic pain, arthritis, vestibular disorders, workplace injuries, and more. Our physiotherapists have extensive experience across many areas. If you're unsure whether we can help, please call us for a free consultation.</p>
             </div>
           </div>
 
         </div>
 
-        <div class="text-center mt-2xl">
-          <p class="section-intro">Still have questions? Contact us for a free 10-minute consultation.</p>
-          <a href="contact.html" class="btn btn-secondary btn-lg">Contact Us</a>
-          <a href="appointments.html" class="btn btn-primary btn-lg" style="margin-left:1rem">Book Appointment</a>
+        <!-- Still have questions? CTA -->
+        <div class="faq-cta-box mt-xl">
+          <h2>Still have questions?</h2>
+          <p>Contact us for a free 10-minute consultation to discuss your specific needs.</p>
+          <div class="btn-group">
+            <a href="contact.html" class="btn btn-white">Contact Us</a>
+            <a href="appointments.html" class="btn btn-outline-white">Book Appointment</a>
+          </div>
         </div>
+
       </div>
     </section>
 
@@ -224,9 +280,18 @@
         </div>
       </div>
       <div class="footer-social">
-        <a href="https://www.facebook.com/raesanatomyphysio" target="_blank" rel="noopener" class="footer-social-btn footer-social-btn--facebook"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>Facebook</a>
-        <a href="https://share.google/hnL4qugk62PgqlhqX" target="_blank" rel="noopener" class="footer-social-btn footer-social-btn--google"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>Burntisland Reviews (90+)</a>
-        <a href="https://g.page/r/CWOvxIDhhFnZEBM/review" target="_blank" rel="noopener" class="footer-social-btn footer-social-btn--google-review"><svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>Glenrothes Reviews</a>
+        <a href="https://www.facebook.com/raesanatomyphysio" target="_blank" rel="noopener" class="footer-social-btn footer-social-btn--facebook">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          Facebook
+        </a>
+        <a href="https://share.google/hnL4qugk62PgqlhqX" target="_blank" rel="noopener" class="footer-social-btn footer-social-btn--google">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+          Burntisland Reviews (90+)
+        </a>
+        <a href="https://g.page/r/CWOvxIDhhFnZEBM/review" target="_blank" rel="noopener" class="footer-social-btn footer-social-btn--google-review">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/></svg>
+          Glenrothes Reviews
+        </a>
       </div>
       <div class="footer-bottom">
         <span>&copy; 2026 Rae's Anatomy Physiotherapy. All rights reserved.</span>
@@ -246,5 +311,25 @@
   </div>
 
   <script src="js/main.js"></script>
+  <script>
+    (function() {
+      var tabs = document.querySelectorAll('.faq-tab');
+      var items = document.querySelectorAll('.faq-item');
+      tabs.forEach(function(tab) {
+        tab.addEventListener('click', function() {
+          var cat = this.getAttribute('data-category');
+          tabs.forEach(function(t) { t.classList.remove('faq-tab--active'); });
+          this.classList.add('faq-tab--active');
+          items.forEach(function(item) {
+            if (cat === 'all' || item.getAttribute('data-category') === cat) {
+              item.style.display = '';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
