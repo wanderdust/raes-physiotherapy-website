@@ -3788,3 +3788,256 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: rotate(-45deg) translat
 .psych-cta-label { color: #48bb78; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 0.75rem; }
 .psych-cta-value { color: white; font-size: 1.2rem; font-weight: 400; text-decoration: none; display: block; }
 .psych-cta-value:hover { color: #48bb78; }
+
+/* ============================================================
+   Locations page
+   ============================================================ */
+.loc-hero {
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.loc-hero-bg {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(30,58,138,0.5), rgba(30,64,175,0.45)),
+              url('assets/images/485996038_671071772091801_5022493300977126666_n.jpg') center 35% / cover;
+}
+
+.loc-hero-body {
+  position: relative;
+  z-index: 1;
+  padding: calc(126px + 3rem) 1rem 3rem;
+}
+@media (max-width: 768px) {
+  .loc-hero-body { padding-top: calc(120px + 2rem); }
+}
+
+.loc-hero-body h1 {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  margin-bottom: 0.75rem;
+}
+
+.loc-hero-body p {
+  font-size: 1.2rem;
+  color: white;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  text-shadow: 0 1px 5px rgba(0,0,0,0.5);
+}
+
+.loc-hero-chips {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.loc-chip {
+  background: white;
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 0.9rem 1.75rem;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.loc-chip:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* Clinic cards */
+.loc-clinic-card {
+  background: linear-gradient(135deg, #fff 0%, #f8fafc 100%);
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+  border: 2px solid rgba(30,58,138,0.08);
+}
+@media (max-width: 768px) {
+  .loc-clinic-card { padding: 1.5rem; }
+}
+
+.loc-clinic-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.loc-clinic-header h2 {
+  color: var(--color-primary);
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.loc-clinic-header h3 {
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+.loc-clinic-header p { color: #666; font-style: italic; margin: 0; }
+
+.loc-clinic-divider {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(135deg, var(--color-primary), #60a5fa);
+  border-radius: 2px;
+  margin: 0.75rem auto 1.5rem;
+}
+
+.loc-info-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+@media (min-width: 640px) {
+  .loc-info-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.loc-info-col {
+  background: white;
+  padding: 2rem;
+  border-radius: var(--radius-xl);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  border: 1px solid rgba(30,58,138,0.08);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.loc-info-col:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.loc-info-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--color-primary), #60a5fa);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.25rem;
+}
+.loc-info-icon svg { width: 28px; height: 28px; }
+
+.loc-info-col h4 {
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+.loc-info-col p { color: var(--color-text-muted); line-height: 1.7; margin: 0; font-size: 0.95rem; }
+
+.loc-contact-link {
+  display: block;
+  color: var(--color-primary-dark);
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  word-break: break-all;
+}
+.loc-phone { font-size: 1.2rem; font-weight: 600; margin-bottom: 0.75rem; }
+
+.loc-features-band {
+  background: linear-gradient(135deg, var(--color-primary), #2563eb);
+  padding: 2.5rem;
+  border-radius: var(--radius-xl);
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+@media (min-width: 640px) {
+  .loc-features-band { grid-template-columns: 1fr 1fr; }
+}
+
+.loc-feature h4 { color: white; font-size: 1.3rem; margin-bottom: 0.5rem; font-weight: 600; }
+.loc-feature p { color: rgba(255,255,255,0.9); line-height: 1.7; margin: 0; font-size: 0.95rem; }
+
+.loc-book-row { text-align: center; }
+
+/* Areas We Serve */
+.loc-areas-section {
+  background: linear-gradient(135deg, var(--color-primary), #2563eb);
+  padding: 4rem 0;
+  color: white;
+}
+
+.loc-areas-section h2 {
+  text-align: center;
+  color: white;
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.loc-areas-section > .container > p {
+  color: rgba(255,255,255,0.9);
+  text-align: center;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.7;
+}
+
+.loc-areas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  max-width: 1100px;
+  margin: 0 auto 3rem;
+}
+@media (min-width: 768px) {
+  .loc-areas-grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+.loc-area-card {
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(8px);
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+.loc-area-card:hover {
+  background: rgba(255,255,255,0.18);
+  transform: translateY(-4px);
+}
+
+.loc-area-icon {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.75rem;
+}
+.loc-area-icon svg { width: 26px; height: 26px; }
+
+.loc-area-card h3 { color: white; font-size: 1.1rem; margin-bottom: 0.25rem; font-weight: 600; }
+.loc-area-card p { color: rgba(255,255,255,0.8); font-size: 0.875rem; margin: 0; }
+
+.loc-areas-cta {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255,255,255,0.12);
+  border-radius: var(--radius-xl);
+  max-width: 750px;
+  margin: 0 auto;
+  backdrop-filter: blur(8px);
+}
+.loc-areas-cta h3 { color: white; font-size: 1.5rem; margin-bottom: 0.75rem; }
+.loc-areas-cta p { color: rgba(255,255,255,0.92); line-height: 1.7; margin: 0; }

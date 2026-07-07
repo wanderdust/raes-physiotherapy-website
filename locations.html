@@ -87,102 +87,166 @@
 
   <main class="page-content">
 
-    <section class="page-hero" style="position:relative;display:flex;align-items:center;min-height:320px;overflow:hidden;">
-      <div class="page-hero-bg" style="background-image:url('assets/images/485996038_671071772091801_5022493300977126666_n.jpg');"></div>
-      <div class="container" style="position:relative;z-index:1;width:100%;">
-        <div class="page-hero-body">
+    <!-- Hero -->
+    <section class="loc-hero">
+      <div class="loc-hero-bg"></div>
+      <div class="container">
+        <div class="loc-hero-body">
           <h1>Our Locations</h1>
-          <p class="page-hero-sub">Professional physiotherapy clinics in Burntisland &amp; Glenrothes serving all of Fife.</p>
+          <p>Professional physiotherapy clinics in Burntisland &amp; Glenrothes serving all of Fife</p>
+          <div class="loc-hero-chips">
+            <a href="#burntisland" class="loc-chip">Burntisland, Fife</a>
+            <a href="#glenrothes" class="loc-chip">Glenrothes, Fife</a>
+            <a href="https://www.google.com/maps/dir//Rae's+Anatomy+Physiotherapy,+1+Old+Station+Buildings,+Forth+Pl,+Burntisland+KY3+9DR" target="_blank" rel="noopener" class="loc-chip">Get Directions</a>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- Clinic Cards -->
     <section class="section">
       <div class="container">
 
-        <div class="grid grid-2 mt-xl">
-
-          <!-- Burntisland -->
-          <div class="location-card" id="burntisland">
-            <div class="location-card-header">
-              <h2>Burntisland Clinic</h2>
-              <p>Main Clinic – Rae's Anatomy Physiotherapy</p>
+        <!-- Burntisland -->
+        <div class="loc-clinic-card" id="burntisland">
+          <div class="loc-clinic-header">
+            <h2>Burntisland Clinic</h2>
+            <div class="loc-clinic-divider"></div>
+            <h3>Rae's Anatomy Physiotherapy</h3>
+            <p>Your Partner in Recovery &amp; Performance</p>
+          </div>
+          <div class="loc-info-grid">
+            <div class="loc-info-col">
+              <div class="loc-info-icon">
+                <svg viewBox="0 0 24 24" fill="white"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              </div>
+              <h4>Address</h4>
+              <p>1 Old Station Buildings<br>Forth Place<br>Burntisland, Fife<br>KY3 9DR</p>
             </div>
-            <div class="location-card-body">
-              <div class="location-detail">
-                <strong>Address</strong>
-                <span>1 Old Station Buildings<br>Forth Place<br>Burntisland, Fife KY3 9DR</span>
+            <div class="loc-info-col">
+              <div class="loc-info-icon">
+                <svg viewBox="0 0 24 24" fill="white"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
               </div>
-              <div class="location-detail">
-                <strong>Phone</strong>
-                <span><a href="tel:+447588468380">07588 468380</a></span>
+              <h4>Contact</h4>
+              <a href="tel:+447588468380" class="loc-contact-link loc-phone">07588 468380</a>
+              <a href="mailto:info@raesanatomyphysiotherapy.com" class="loc-contact-link">info@raesanatomyphysiotherapy.com</a>
+            </div>
+            <div class="loc-info-col">
+              <div class="loc-info-icon">
+                <svg viewBox="0 0 24 24" fill="white"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
               </div>
-              <div class="location-detail">
-                <strong>Email</strong>
-                <span><a href="mailto:info@raesanatomyphysiotherapy.com">info@raesanatomyphysiotherapy.com</a></span>
-              </div>
-              <div class="location-detail">
-                <strong>Opening Hours</strong>
-                <span>Mon–Fri: 8:00am – 8:00pm<br>Saturday: 9:00am – 12:00pm<br>Sunday: Closed</span>
-              </div>
-              <div class="location-detail">
-                <strong>Access</strong>
-                <span>Conveniently located at the Old Station Buildings with excellent transport links by train and bus, plus designated parking.</span>
-              </div>
-              <a href="appointments.html" class="btn btn-primary btn-full mt-md">Book at Burntisland</a>
+              <h4>Opening Hours</h4>
+              <p><strong>Mon – Fri:</strong> 8:00 AM – 8:00 PM<br><strong>Saturday:</strong> 9:00 AM – 12:00 PM<br><strong>Sunday:</strong> Closed</p>
             </div>
           </div>
-
-          <!-- Glenrothes -->
-          <div class="location-card" id="glenrothes">
-            <div class="location-card-header">
-              <h2>Glenrothes Clinic</h2>
-              <p>Partner Clinic – Riverside Therapies</p>
+          <div class="loc-features-band">
+            <div class="loc-feature">
+              <h4>Easy to Find</h4>
+              <p>Conveniently located at the Old Station Buildings in Burntisland with excellent transport links and designated parking.</p>
             </div>
-            <div class="location-card-body">
-              <div class="location-detail">
-                <strong>Address</strong>
-                <span>Riverside Therapies<br>Balbirnie Fitness Centre<br>Woolmill Rd<br>Glenrothes, Fife KY7 5RF</span>
-              </div>
-              <div class="location-detail">
-                <strong>Phone</strong>
-                <span><a href="tel:+447588468380">07588 468380</a></span>
-              </div>
-              <div class="location-detail">
-                <strong>Email</strong>
-                <span><a href="mailto:info@raesanatomyphysiotherapy.com">info@raesanatomyphysiotherapy.com</a></span>
-              </div>
-              <div class="location-detail">
-                <strong>Opening Hours</strong>
-                <span>Mon–Fri: 8:00am – 8:00pm<br>Saturday: 9:00am – 5:00pm<br>Sunday: Closed</span>
-              </div>
-              <div class="location-detail">
-                <strong>Facility</strong>
-                <span>Based within the Balbirnie Fitness Centre, offering modern treatment facilities and easy access.</span>
-              </div>
-              <a href="appointments.html" class="btn btn-teal btn-full mt-md">Book at Glenrothes</a>
+            <div class="loc-feature">
+              <h4>Modern Facility</h4>
+              <p>State-of-the-art equipment and comfortable treatment rooms designed for your recovery and comfort.</p>
             </div>
           </div>
-
+          <div class="loc-book-row">
+            <a href="appointments.html" class="btn btn-primary btn-lg">Book Appointment Now</a>
+          </div>
         </div>
+
+        <!-- Glenrothes -->
+        <div class="loc-clinic-card mt-xl" id="glenrothes">
+          <div class="loc-clinic-header">
+            <h2>Glenrothes Clinic</h2>
+            <div class="loc-clinic-divider"></div>
+            <h3>Riverside Therapies – Balbirnie Fitness Centre</h3>
+            <p>Your Partner in Recovery &amp; Performance</p>
+          </div>
+          <div class="loc-info-grid">
+            <div class="loc-info-col">
+              <div class="loc-info-icon">
+                <svg viewBox="0 0 24 24" fill="white"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              </div>
+              <h4>Address</h4>
+              <p>Balbirnie Fitness Centre<br>Woolmill Road<br>Glenrothes, Fife<br>KY7 5RF</p>
+            </div>
+            <div class="loc-info-col">
+              <div class="loc-info-icon">
+                <svg viewBox="0 0 24 24" fill="white"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              </div>
+              <h4>Contact</h4>
+              <a href="tel:+447588468380" class="loc-contact-link loc-phone">07588 468380</a>
+              <a href="mailto:info@raesanatomyphysiotherapy.com" class="loc-contact-link">info@raesanatomyphysiotherapy.com</a>
+            </div>
+            <div class="loc-info-col">
+              <div class="loc-info-icon">
+                <svg viewBox="0 0 24 24" fill="white"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+              </div>
+              <h4>Opening Hours</h4>
+              <p><strong>Mon – Fri:</strong> 8:00 AM – 8:00 PM<br><strong>Saturday:</strong> 9:00 AM – 5:00 PM<br><strong>Sunday:</strong> Closed</p>
+            </div>
+          </div>
+          <div class="loc-features-band">
+            <div class="loc-feature">
+              <h4>Easy to Find</h4>
+              <p>Located within Balbirnie Fitness Centre with convenient access, ample parking, and modern facilities.</p>
+            </div>
+            <div class="loc-feature">
+              <h4>Modern Facility</h4>
+              <p>Based within a modern fitness centre offering state-of-the-art treatment rooms and rehabilitation equipment.</p>
+            </div>
+          </div>
+          <div class="loc-book-row">
+            <a href="appointments.html" class="btn btn-primary btn-lg">Book Appointment Now</a>
+          </div>
+        </div>
+
       </div>
     </section>
 
-    <section class="section section-dark">
+    <!-- Areas We Serve -->
+    <section class="loc-areas-section">
       <div class="container">
-        <h2 class="section-title">Areas We Serve</h2>
-        <p class="section-intro text-center">We proudly provide expert physiotherapy services to patients throughout Fife and the surrounding areas.</p>
-        <div class="grid grid-3 mt-xl">
-          <div class="feature-card"><h3>Burntisland</h3><p>Main clinic location serving the local community and surrounding coastal towns.</p></div>
-          <div class="feature-card"><h3>Glenrothes</h3><p>Partner clinic at Balbirnie Fitness Centre serving central and east Fife.</p></div>
-          <div class="feature-card"><h3>Dunfermline</h3><p>Serving patients from Dunfermline and West Fife via our Burntisland clinic.</p></div>
-          <div class="feature-card"><h3>Aberdour &amp; Dalgety Bay</h3><p>Coastal communities just minutes from our Burntisland clinic.</p></div>
-          <div class="feature-card"><h3>Leven &amp; East Fife</h3><p>East Fife patients welcomed at our Glenrothes clinic.</p></div>
-          <div class="feature-card"><h3>Cowdenbeath &amp; Kelty</h3><p>Central Fife communities served by both clinic locations.</p></div>
+        <h2>Areas We Serve</h2>
+        <p>We proudly provide expert physiotherapy services to patients throughout Fife and the surrounding areas</p>
+        <div class="loc-areas-grid">
+          <div class="loc-area-card">
+            <div class="loc-area-icon"><svg viewBox="0 0 24 24" fill="#1e3a8a"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></div>
+            <h3>Burntisland</h3><p>Main Clinic Location</p>
+          </div>
+          <div class="loc-area-card">
+            <div class="loc-area-icon"><svg viewBox="0 0 24 24" fill="#1e3a8a"><path d="M19 9.3V4h-3v2.6L12 3 2 12h3v8h5v-6h4v6h5v-8h3l-3-2.7zm-9 .7c0-1.1.9-2 2-2s2 .9 2 2h-4z"/></svg></div>
+            <h3>Aberdour</h3><p>Nearby Community</p>
+          </div>
+          <div class="loc-area-card">
+            <div class="loc-area-icon"><svg viewBox="0 0 24 24" fill="#1e3a8a"><path d="M19 9.3V4h-3v2.6L12 3 2 12h3v8h5v-6h4v6h5v-8h3l-3-2.7zm-9 .7c0-1.1.9-2 2-2s2 .9 2 2h-4z"/></svg></div>
+            <h3>Dalgety Bay</h3><p>Nearby Community</p>
+          </div>
+          <div class="loc-area-card">
+            <div class="loc-area-icon"><svg viewBox="0 0 24 24" fill="#1e3a8a"><path d="M15 11V5l-3-3-3 3v2H3v14h18V11h-6zm-8 8H5v-2h2v2zm0-4H5v-2h2v2zm0-4H5V9h2v2zm6 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V9h2v2zm0-4h-2V5h2v2zm6 12h-2v-2h2v2zm0-4h-2v-2h2v2z"/></svg></div>
+            <h3>Glenrothes</h3><p>Partner Clinic Location</p>
+          </div>
+          <div class="loc-area-card">
+            <div class="loc-area-icon"><svg viewBox="0 0 24 24" fill="#1e3a8a"><path d="M15 11V5l-3-3-3 3v2H3v14h18V11h-6zm-8 8H5v-2h2v2zm0-4H5v-2h2v2zm0-4H5V9h2v2zm6 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V9h2v2zm0-4h-2V5h2v2zm6 12h-2v-2h2v2zm0-4h-2v-2h2v2z"/></svg></div>
+            <h3>Dunfermline</h3><p>Nearby Major Town</p>
+          </div>
+          <div class="loc-area-card">
+            <div class="loc-area-icon"><svg viewBox="0 0 24 24" fill="#1e3a8a"><path d="M19 9.3V4h-3v2.6L12 3 2 12h3v8h5v-6h4v6h5v-8h3l-3-2.7zm-9 .7c0-1.1.9-2 2-2s2 .9 2 2h-4z"/></svg></div>
+            <h3>Cowdenbeath</h3><p>Central Fife</p>
+          </div>
+          <div class="loc-area-card">
+            <div class="loc-area-icon"><svg viewBox="0 0 24 24" fill="#1e3a8a"><path d="M15 11V5l-3-3-3 3v2H3v14h18V11h-6zm-8 8H5v-2h2v2zm0-4H5v-2h2v2zm0-4H5V9h2v2zm6 8h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2V9h2v2zm0-4h-2V5h2v2zm6 12h-2v-2h2v2zm0-4h-2v-2h2v2z"/></svg></div>
+            <h3>Glenrothes</h3><p>Major Town</p>
+          </div>
+          <div class="loc-area-card">
+            <div class="loc-area-icon"><svg viewBox="0 0 24 24" fill="#1e3a8a"><path d="M19 9.3V4h-3v2.6L12 3 2 12h3v8h5v-6h4v6h5v-8h3l-3-2.7zm-9 .7c0-1.1.9-2 2-2s2 .9 2 2h-4z"/></svg></div>
+            <h3>Leven</h3><p>East Fife</p>
+          </div>
         </div>
-        <p class="section-intro text-center mt-xl">If your area isn't listed, we still welcome patients from across Fife and surrounding regions. Contact us to discuss how we can help.</p>
-        <div class="text-center mt-md">
-          <a href="contact.html" class="btn btn-white btn-lg">Get in Touch</a>
+        <div class="loc-areas-cta">
+          <h3>Serving All of Fife</h3>
+          <p>If your area isn't listed above, we still welcome patients from across Fife and surrounding regions. Contact us to discuss how we can help with your physiotherapy needs.</p>
+          <a href="contact.html" class="btn btn-white btn-lg" style="margin-top:1.5rem">Get in Touch</a>
         </div>
       </div>
     </section>
