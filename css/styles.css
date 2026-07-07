@@ -67,6 +67,7 @@ body {
   color: var(--color-text);
   background: var(--color-bg);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 img {
@@ -694,37 +695,50 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: rotate(-45deg) translat
   min-width: 180px;
 }
 
-/* Page hero band (non-home pages) */
+/* Page hero band — used on pages WITHOUT a background image */
 .page-hero {
   background: linear-gradient(135deg,
-    rgba(20, 184, 166, 0.25),
-    rgba(30, 64, 175, 0.4),
-    rgba(30, 58, 138, 0.3));
+    rgba(20, 184, 166, 0.85),
+    rgba(30, 64, 175, 0.9) 50%,
+    rgba(30, 58, 138, 0.95));
   padding: var(--space-2xl) 0;
   text-align: center;
   position: relative;
+  /* Account for fixed header */
+  padding-top: calc(var(--space-2xl) + 126px);
+  margin-top: -126px;
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    padding-top: calc(var(--space-2xl) + 120px);
+    margin-top: -120px;
+  }
 }
 
 .page-hero h1 {
-  color: var(--color-primary);
-  margin-bottom: var(--space-sm);
+  color: #fff;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* Green separator between h1 and subtitle */
+.page-hero h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(135deg, var(--color-teal), var(--color-teal-glow));
+  border-radius: 2px;
+  margin: 0.75rem auto 0.75rem;
 }
 
 .page-hero p {
   font-size: 1.1rem;
-  color: var(--color-text-muted);
+  color: rgba(255, 255, 255, 0.9);
   max-width: 680px;
   margin-inline: auto;
-}
-
-.page-hero::after {
-  content: "";
-  display: block;
-  width: 60px;
-  height: 4px;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-teal));
-  border-radius: 2px;
-  margin: var(--space-md) auto 0;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.3);
 }
 
 /* ============================================================
@@ -895,7 +909,7 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: rotate(-45deg) translat
 
 .gallery-item img {
   width: 100%;
-  height: 240px;
+  height: 320px;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
@@ -1774,6 +1788,11 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: rotate(-45deg) translat
 .page-hero-body {
   text-align: center;
   padding: 3rem 1rem;
+  padding-top: calc(126px + 2rem);
+}
+
+@media (max-width: 768px) {
+  .page-hero-body { padding-top: calc(120px + 1.5rem); }
 }
 
 .page-hero-body h1 {
@@ -1954,8 +1973,11 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: rotate(-45deg) translat
 /* Promises */
 .promises-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+@media (min-width: 768px) {
+  .promises-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 .promise-card {
@@ -2467,7 +2489,7 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: rotate(-45deg) translat
 
 .pricing-grid-2 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: 2rem;
 }
 
@@ -2601,7 +2623,7 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: rotate(-45deg) translat
 /* Pricing info */
 .pricing-info-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
   gap: 3rem;
   max-width: 1200px;
   margin-left: auto;
@@ -2857,7 +2879,7 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: rotate(-45deg) translat
 .contact-clinic-cards { display: grid; gap: 1.5rem; margin-bottom: 2rem; }
 
 @media (min-width: 600px) {
-  .contact-clinic-cards { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+  .contact-clinic-cards { grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr)); }
 }
 
 .contact-clinic-card {
@@ -2975,27 +2997,41 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: rotate(-45deg) translat
    Service Page Layout
    ============================================================ */
 .svc-hero {
-  background: linear-gradient(135deg, #14b8a6 0%, #3b82f6 100%);
-  padding: 5rem 1.25rem;
+  background: linear-gradient(135deg, #14b8a6 0%, #1e3a8a 100%);
+  /* Push content below fixed header */
+  padding: calc(126px + 2.5rem) 1.25rem 3rem;
   text-align: center;
   color: white;
-  box-shadow: 0 20px 60px rgba(20, 184, 166, 0.25);
+}
+
+@media (max-width: 768px) {
+  .svc-hero { padding-top: calc(120px + 2rem); }
 }
 
 .svc-hero h1 {
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(1.8rem, 5vw, 3rem);
   font-weight: 700;
   color: white;
-  margin-bottom: 1rem;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.svc-hero h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.9), var(--color-teal-glow));
+  border-radius: 2px;
+  margin: 0.6rem auto 0.6rem;
 }
 
 .svc-hero p {
-  font-size: 1.2rem;
-  color: white;
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.9);
   max-width: 700px;
   margin: 0 auto;
-  text-shadow: 0 1px 5px rgba(0,0,0,0.2);
+  text-shadow: 0 1px 4px rgba(0,0,0,0.3);
 }
 
 .svc-content {
@@ -3127,7 +3163,7 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: rotate(-45deg) translat
 
 .psych-review-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
   gap: 1.75rem;
   margin-bottom: 3rem;
 }
